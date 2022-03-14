@@ -1,0 +1,200 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <center>
+   
+ <h1>Case Study</h1>
+ <hr>
+  <p id="first">
+    Microsoft Azure Vs MobileNet
+     </p>
+     <ol>
+   <div class="animation">
+      <div class="container">
+         <li>
+            <label>Test Image-</label>
+            <br>
+            <img src="glass (1).jpg" class="responsive" height="500px" width="400px">
+         </li>
+         <p id="output">Output on Microsoft Azure</p>
+         <span>Glass</span>
+         <p id="output">Output on MobileNet</p>
+         <br><br>
+         <span>Glass,Water and Water bottle</span>
+         <br><br>
+         Result-Microsoft Azure is more accurate
+         <p></p>
+         <hr>
+      </div>
+   </div>
+   <div class="animation">
+      <div class="container">
+         <li>
+            <label>Test Image-</label>
+            <br>
+            <img src="bottel.jpg" class="responsive" height="500px" width="400px">
+         </li>
+         <p id="output">Output on Microsoft Azure</p>
+         <span>Water Bottel</span>
+         <p id="output">Output on MobileNet</p>
+         <br>
+         <span>Water Bottle</span>
+         <br><br>
+         Result-Both of them are accurate
+         <p></p>
+         <hr>
+      </div>
+   </div>
+   <div class="animation">
+      <div class="container">
+         <li>
+            <label>Test Image-</label>
+            <br>
+            <img src="ball.jpg" class="responsive" height="500px" width="400px">
+         </li>
+         <p id="output">Output on Microsoft Azure</p>
+         <span>Ball</span>
+         <p id="output">Output on MobileNet</p>
+         <br>
+         <span>Ball and electronic</span>
+         <br><br>
+         Result-Microsoft Azure is more accurate then MobileNet
+         <p></p>
+         <hr>
+      </div>
+   </div>
+   <div class="animation">
+    <div class="container">
+        <li>
+        <label>Test Image-</label>
+        <br>
+        <img src="speaker.jpg" class="responsive" height="500px" width="400px">
+     </li>
+        <p id="output">Output on Microsoft Azure</p>
+        <span>Cat</span>
+        <p id="output">Output on Mobilenet</p>
+        <span>Speaker, Elctronic and Outside</span>
+        <br><br>
+        Result-Mobilenet is more accurate then Microsoft Azure
+        
+        <hr>
+    </div>
+   </div>
+   <div class="animation">
+    <div class="container">
+        <li>
+        <label>Test Image-</label>
+        <br>
+        <img src="monitar.jpg" height="500px" width="600px">
+     </li>
+        <p id="output">Output on Microsoft Azure</p>
+        <span>Monitor</span>
+        <p id="output">Output on Mobilenet</p>
+        <span>Table</span>
+        <br><br>
+        Result-Microsoft Azure is more accurate then MobileNet
+        <hr>
+    </div>
+   </div>
+   <div class="animation">
+    <div class="container">
+        <li>
+        <label>Test Image-</label>
+        <br>
+        <img src="keyboard.jpg" height="500px" width="600px">
+     </li>
+        <p id="output">Output on Microsoft Azure</p>
+        <span>Electronic</span>
+        <p id="output">Output on Mobilenet</p>
+        <span>keyboard</span>
+        <br><br>
+        Result-Mobilenet is more accurate then Microsoft Azure
+        <hr>
+    </div>
+   </div>
+   <div class="animation">
+    <div class="container">
+        <li>
+        <label>Test Image-</label>
+        <br>
+        <img src="https://tse2.mm.bing.net/th?id=OIP.o1oed8KaYOxeZ0n3m1jokgHaE8&pid=Api&P=0&w=227&h=152" height="500px" width="600px">
+     </li>
+        <p id="output">Output on Microsoft Azure</p>
+        <span>Apple</span>
+        <p id="output">Output on Mobilenet</p>
+        <span>Ball</span>
+        <br><br>
+        Result-Microsoft Azure is more accurate then MobileNet
+
+        <hr>
+    </div>
+   </div>
+   <div class="animation">
+    <div class="container">
+        <li>
+        <label>Test Image-</label>
+        <br>
+        <img src="bat.jpg" height="500px" width="200px">
+     </li>
+        <p id="output">Output on Microsoft Azure</p>
+        <span>Cricket bat</span>
+        <p id="output">Output on Mobilenet</p>
+        <span>Clothing</span>
+        <br><br>
+        Result-Microsoft Azure is more accurate then MobileNet
+        <hr>
+    </div>
+   </div>
+   <div class="animation">
+    <div class="container">
+        <li>
+        <label>Test Image-</label>
+        <br>
+        <img src="mobile.jpg" height="500px" width="400px">
+     </li>
+        <p id="output">Output on Microsoft Azure</p>
+        <span>Monitor</span>
+        <p id="output">Output on Mobilenet</p>
+        <span>Mobile, display and electronic</span>
+        <br><br>
+        Result-Mobilenet is more accurate then Microsoft Azure
+        <hr>
+    </div>
+   </div>
+   <div class="animation">
+    <div class="container">
+        <li>
+        <label>Test Image-</label>
+        <br>
+        <img src="bag.jpg" height="500px" width="500px">
+     </li>
+        <p id="output">Output on Microsoft Azure</p>
+        <span>Bag</span>
+        <p id="output">Output on Mobilenet</p>
+        <span>Bag</span>
+        <br><br>
+        Result-Both of them are accurate
+        <hr>
+    </div>
+   </div>
+   <div class="result">
+         <label>I have tested 10 images<br>Mobilenet predict 5 of them correctly and<br> Microsoft Azure predict 7 images correctly<br>So as per my case study Microsoft Azure is more accurate </label>
+         </div>
+</center>
+</ol>
+<div class="copy_right_footer">
+   Developed By - Ananya
+ </div>
+</body>
+</html>
